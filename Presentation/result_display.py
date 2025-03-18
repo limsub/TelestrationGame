@@ -73,7 +73,7 @@ async def run(screen, image_strings, correct_answer, result_answer):
         answer_text = title_font.render(correct_answer, True, (0, 0, 0))
         screen.blit(answer_text, answer_text_pos)   
 
-        result_text = title_font.render(result_answer, True, (0, 0, 0))
+        result_text = title_font.render(result_answer, True, result_color)
         screen.blit(result_text, result_text_pos)
 
         for img, pos in zip(resized_images, positions):
